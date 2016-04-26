@@ -7,5 +7,8 @@ author: Utaro Hashimoto
 <p align='center'>One-liners to visualize data.</p>
 <p align='center'>Embrace it & spread it on.</p>
 <br>
+<p align='center'>
+  <img src='/static/img/poster.jpg' alt='poster' style='width:300px; height:382px;' align='center'>
+</p>
 
 
