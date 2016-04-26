@@ -1,5 +1,5 @@
 title: Histogram
-author:
+author: Utaro Hashimoto
 date: 2016-04
 
 # Histogram
@@ -8,9 +8,9 @@ date: 2016-04
 
     :::python hl_lines="1"
 
-	sample_dataframe.hist() # Option 1 using Pandas, PREFERED
+	sample_dataframe.hist() # Option 1, PREFERED
 
-	sample_dataframe.plot(kind='hist') # Option 2 using Pandas
+	sample_dataframe.plot(kind='hist') # Option 2
 
 ### Clean Shaven
 
@@ -19,11 +19,10 @@ date: 2016-04
 	bin_boundaries = range(0, 11, 1)
 
 	ax_hist = sample_dataframe.hist(
-		column=['int_field_1', 'int_field_2'],
+		column=[
+            'int_field_1',
+            'int_field_2'],
 		bins=bin_boundaries,
 		layout=(2,1),
 		sharex=True,
 		sharey=True)
-
-
-
