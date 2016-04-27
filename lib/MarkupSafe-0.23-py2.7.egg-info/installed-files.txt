@@ -10,7 +10,6 @@
 ../markupsafe/_native.pyc
 ../markupsafe/tests.pyc
 ../markupsafe/_speedups.so
-./
 dependency_links.txt
 not-zip-safe
 PKG-INFO

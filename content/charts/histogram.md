@@ -2,23 +2,25 @@ title: Histogram
 author: Utaro Hashimoto
 date: 2016-04
 
+
 # Histogram
 
 
-### Quick Dirty
+[TOC]
+
+
+## Quick Dirty
 
     :::python
 	sample_dataframe.hist() # Option 1, PREFERED
-
 ![histogram option 1](/static/img/histogram_1.png)
 
     :::python
 	sample_dataframe.plot(kind='hist') # Option 2
-
 ![histogram option 2](/static/img/histogram_2.png)
 
 
-### Clean Shaven
+## Clean Shaven
 
     :::python
     # Customize binning resolution
@@ -32,5 +34,7 @@ date: 2016-04
 		layout=(2,1),
 		sharex=True,
 		sharey=True)
-
 ![histogram option 3](/static/img/histogram_3.png)
+
+
+## Random Thoughts

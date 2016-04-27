@@ -5,20 +5,21 @@ date: 2016-04
 # Boxplot
 
 
-### Quick Dirty
+[TOC]
+
+
+## Quick Dirty
 
     :::python
 	sample_dataframe.boxplot() # Option 1, PREFERED
-
 ![boxplot option 1](/static/img/boxplot_1.png)
 
     :::python
 	seaborn.boxplot(sample_dataframe) # Option 2
-
 ![boxplot option 2](/static/img/boxplot_2.png)
 
 
-### Clean Shaven
+## Clean Shaven
 
     :::python
     # Option 1
@@ -35,5 +36,7 @@ date: 2016-04
         x='int_field_2',
         y='string_field_1', # grouping by a categorical var
         orient='h')
-
 ![boxplot option 4](/static/img/boxplot_4.png)
+
+
+## Random Thoughts
