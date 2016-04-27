@@ -4,50 +4,35 @@ date: 2016-04
 
 # Scatter Matrix
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+### Quick Dirty
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
+    :::python
+    seaborn.pairplot(sample_dataframe) # Option 1, PREFERED
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt moon anim id est laborum.
+![scatter matrix option 1](/static/img/scatter_matrix_1.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
+    :::python
+    pandas.tools.plotting.scatter_matrix(sample_dataframe) # Option 2
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt moon anim id est laborum.
+![scatter matrix option 2](/static/img/scatter_matrix_2.png)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt moon anim id est laborum.
+### Clean Shaven
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
+    :::python
+    ax_scatter_matrix = seaborn.pairplot(
+      data=sample_dataframe,
+      x_vars=[
+          'int_field_1',
+          'int_field_2',
+          'float_field_1'],
+      y_vars=[
+          'int_field_1',
+          'int_field_2',
+          'float_field_1'],
+      diag_kind = 'kde', # kde vs hist
+      hue='string_field_1', # color base on categories
+      palette = 'Spectral')
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt moon anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut ancient ex ea commodo consequat.
-
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-in culpa qui officia deserunt moon anim id est laborum.
-in culpa qui officia deserunt moon anim id est laborum.
+![scatter matrix option 3](/static/img/scatter_matrix_3.png)
