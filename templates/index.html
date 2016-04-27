@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -47,10 +47,10 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-lg-12">
-                {{ content }}
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
-                  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true" aria-label="Menu"></span>
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" aria-label="Menu"></span>
                 </a>
+                {{ content }}
             </div>
           </div>
         </div>
