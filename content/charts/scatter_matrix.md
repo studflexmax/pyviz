@@ -1,5 +1,5 @@
 title: Scatter Matrix
-author: Utaro Hashimoto
+author: studflexmax
 date: 2016-04
 
 # Scatter Matrix

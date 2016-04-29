@@ -1,6 +1,6 @@
 title: Python Data Visualization Primer
 date: 2016-04-25
-author: Utaro Hashimoto
+author: studflexmax
 
 <h1 align='center'>Python Data Visualization Primer</h1>
 <br>

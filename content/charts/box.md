@@ -1,5 +1,5 @@
 title: Boxplot
-author: Utaro Hashimoto
+author: studflexmax
 date: 2016-04
 
 # Boxplot
