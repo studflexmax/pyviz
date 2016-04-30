@@ -1,45 +1,41 @@
-title: Line
+title: Line Plot
 author: studflexmax
 date: 2016-04
-
-# Line
 
 
 [TOC]
 
 
-## Quick Dirty
+### Quick Dirty
 
     :::python
-    sample_dataframe.boxplot() # Option 1, PREFERED
-![boxplot option 1](/static/img/boxplot_1.png)
+    sample_dataframe.plot.line() # Option 1
+![line option 1](/static/img/line_1.png)
+
+
+### Clean Shaven
 
     :::python
-    seaborn.boxplot(sample_dataframe) # Option 2
-![boxplot option 2](/static/img/boxplot_2.png)
+    # Extract the row index values, range(0, n, 1), into a field.
+    # This is required to use the index as the x-axis.
+    sample_dataframe['index_value'] = sample_dataframe.index
 
-
-## Clean Shaven
-
-    :::python
-    # Option 1
-    ax_box = sample_dataframe.boxplot(
-        column=['int_field_1'],
-        by=['string_field_1']) # grouping by a categorical var
-![boxplot option 3](/static/img/boxplot_3.png)
-
-
-    :::python
-    # Option 2
-    ax_box = seaborn.boxplot(
-:wqa
-
+    seaborn.pointplot(
         data=sample_dataframe,
-        x='int_field_2',
-        y='string_field_1', # grouping by a categorical var
-        orient='h')
-![boxplot option 4](/static/img/boxplot_4.png)
+        estimator=numpy.mean,
+        x='index_value',
+        y='int_field_1',
+        join=True)
+
+    seaborn.pointplot(
+        data=sample_dataframe,
+        estimator=numpy.mean,
+        x='index_value',
+        y='int_field_1',
+        hue='string_field_1',
+        join=False)
+![line option 2](/static/img/line_2.png)
 
 
-## Random Thoughts
+### Random Thoughts
 

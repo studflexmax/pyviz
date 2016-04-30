@@ -3,13 +3,10 @@ author: studflexmax
 date: 2016-04
 
 
-# Histogram
-
-
 [TOC]
 
 
-## Quick Dirty
+### Quick Dirty
 
     :::python
 	sample_dataframe.hist() # Option 1, PREFERED
@@ -20,7 +17,7 @@ date: 2016-04
 ![histogram option 2](/static/img/histogram_2.png)
 
 
-## Clean Shaven
+### Clean Shaven
 
     :::python
     # Customize binning resolution
@@ -37,4 +34,4 @@ date: 2016-04
 ![histogram option 3](/static/img/histogram_3.png)
 
 
-## Random Thoughts
+### Random Thoughts

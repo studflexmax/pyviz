@@ -2,13 +2,11 @@ title: Scatter Matrix
 author: studflexmax
 date: 2016-04
 
-# Scatter Matrix
-
 
 [TOC]
 
 
-## Quick Dirty
+### Quick Dirty
 
     :::python
     seaborn.pairplot(sample_dataframe) # Option 1, PREFERED
@@ -19,7 +17,7 @@ date: 2016-04
 ![scatter matrix option 2](/static/img/scatter_matrix_2.png)
 
 
-## Clean Shaven
+### Clean Shaven
 
     :::python
     ax_scatter_matrix = seaborn.pairplot(
@@ -38,4 +36,4 @@ date: 2016-04
 ![scatter matrix option 3](/static/img/scatter_matrix_3.png)
 
 
-## Random Thoughts
+### Random Thoughts
