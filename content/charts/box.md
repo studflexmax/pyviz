@@ -2,7 +2,7 @@ title: Boxplot
 author: studflexmax
 date: 2016-04
 
-# Boxplot
+# Box Plot
 
 
 [TOC]
