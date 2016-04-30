@@ -42,7 +42,14 @@ def index(misc_dir='misc'):
     content = flatpages.get_or_404(path)
     return render_template("index.html", content=content)
 
-# For '/', render from markdown /content/charts/<name>.md.
+# For '/misc/*', render from markdown /content/misc/<name>.md.
+@app.route('/misc/<name>/')
+def misc(name, misc_dir='misc'):
+    path = '{}/{}'.format(misc_dir, name)
+    content = flatpages.get_or_404(path)
+    return render_template('index.html', content=content)
+
+# For '/charts/*', render from markdown /content/charts/<name>.md.
 @app.route('/charts/<name>/')
 def chart(name, charts_dir='charts'):
     path = '{}/{}'.format(charts_dir, name)
