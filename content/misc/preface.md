@@ -60,11 +60,12 @@ there are many options. Here, let's examine some of the most popular ones:
 #### [Bokah](http://bokeh.pydata.org/)
 *  A Python interactivite visualization library that targets modern web
    browswers for presentation.
+*  **CON**: Performance, when working with large number of data points, it may
+   take impractically long to produce required plots.
+     *  Thus omitted from this primer.
 *  **PRO**: Interactivity, all plots are rendered as javascript widgets;
    therefore, you can manipulate the plots after they have been generated
    (pinch, zoom, change resolution, etc.).
-*  **CON**: Performance, when working with large number of data points, it may
-   take impractically long to produce required plots.
 *  **SUITABLE**: Context in which the number of data points is managable (in
    my experience ~5,000 on a laptop) and interactivity is required/prefered
    (e.g. dashboards, webpages).
