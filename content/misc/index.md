@@ -1,4 +1,3 @@
-title: Python Data Visualization Primer
 date: 2016-04-25
 author: studflexmax
 

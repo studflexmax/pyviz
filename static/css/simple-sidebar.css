@@ -98,19 +98,19 @@
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 140px;
-    }
-
-    #wrapper.toggled {
         padding-left: 7px;
     }
 
+    #wrapper.toggled {
+        padding-left: 140px;
+    }
+
     #sidebar-wrapper {
-        width: 140px;
+        width: 7px;
     }
 
     #wrapper.toggled #sidebar-wrapper {
-        width: 7px;
+        width: 140px;
     }
 
     #page-content-wrapper {
